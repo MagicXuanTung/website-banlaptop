@@ -1,0 +1,88 @@
+.container {
+    max-width: 1000px;
+    padding: 20px;
+    background-color: #d9e3f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: auto;
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.tabButton {
+    flex: 1;
+    background-color: #d9e3f0;
+    color: #000;
+    border: none;
+    padding: 8px 16px;
+    margin-right: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.activeTab {
+    background-color: #697689;
+    color: #fff;
+}
+
+.formInput {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.submitButton {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.radioGroup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Center the radio options horizontally */
+    margin-top: 10px;
+}
+
+.radioOption {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .formInput {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .submitButton {
+        margin-top: 10px;
+    }
+
+    .radioGroup {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+}

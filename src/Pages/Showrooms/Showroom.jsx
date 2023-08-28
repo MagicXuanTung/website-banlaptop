@@ -92,31 +92,29 @@ export const Showrooms = () => {
   ]);
 
   return (
-    <>
-      <div className="pageContainer">
-        <div className="centerContainer">
-          <div className="cardGrid">
-            {cardTexts.map((text, i) => (
-              <div className="card" key={i}>
-                <div className="card-banner">
-                  {i + 1}. DCB SHOP.VN {/* Add numerical order to banner */}
-                </div>
-                <div className="card-content">
-                  {/* Add margin or padding to create space */}
-                  <div className="card-content-inner">
-                    {text
-                      .split("\n\n")
-                      .slice(0, 7) // Limit to 7 lines
-                      .map((line, index) => (
-                        <p key={index}>{line}</p>
-                      ))}
-                  </div>
+    <div className="pageContainer">
+      <div className="centerContainer">
+        <div className="cardGrid">
+          {cardTexts.map((text, i) => (
+            <div className="card" key={i}>
+              <div className="card-banner">
+                {i + 1}. DCB SHOP.VN {/* Add numerical order to banner */}
+              </div>
+              <div className="card-content">
+                {/* Add margin or padding to create space */}
+                <div className="card-content-inner">
+                  {text
+                    .split("\n\n")
+                    .slice(0, 7) // Limit to 7 lines
+                    .map((line, index) => (
+                      <p key={index}>{line}</p>
+                    ))}
                 </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
