@@ -1,0 +1,54 @@
+.pageContainer {
+    height: 180vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    color: black;
+    padding: 16px;
+    border-radius: 8px;
+    margin: 1px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(34, 34, 34, 0.1);
+    cursor: pointer;
+    position: relative;
+    /* Ensure relative positioning for banner */
+}
+
+.card-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #4169E1, #00BFFF);
+    /* Gradient background */
+    color: white;
+    /* Customize banner text color */
+    padding: 8px;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+}
+
+.alignLeft {
+    text-align: left;
+}
+
+.cardGrid {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(4, 300px);
+    justify-content: center;
+}
+
+.card-content-inner {
+    margin-top: 30px;
+    /* Adjust the spacing as needed */
+}
