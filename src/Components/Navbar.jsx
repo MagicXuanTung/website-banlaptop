@@ -56,7 +56,6 @@ import { GrLogin, GrReturn, GrServices } from "react-icons/gr";
 import { Link, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { logout } from "../Redux/Auth/auth.action";
-
 function Navbar() {
   const [isLargerThan1100] = useMediaQuery("(min-width: 1100px)");
   const [isLargerThan750px] = useMediaQuery("(min-width: 750px)");
@@ -124,30 +123,41 @@ function Navbar() {
                 </Flex>
               </Link>
 
-              <Link to="contactus">
-                <Flex
+              <Menu>
+                <MenuButton
+                  as={Flex}
                   w="max"
                   h="max"
                   alignItems="center"
-                  cursor={"pointer"}
-                  borderRadius={"25px"}
+                  cursor="pointer"
+                  borderRadius="25px"
                   px="11px"
                   py="5px"
-                  gap={"5px"}
+                  gap="5px"
                   bg="repeating-linear-gradient(to right,#f1d113 0,#fef273 25%,#f1b01f 50%,#fde904 75%,#e5bf23 100%)"
                 >
-                  <FaPhone color="#ff0000" fontSize="10px" />
-                  <Heading
-                    fontSize={"13px"}
-                    fontWeight={"normal"}
-                    color={"#ff0000"}
-                  >
-                    Bán hàng trực tuyến
-                  </Heading>
-                </Flex>
-              </Link>
+                  <Flex alignItems="center">
+                    <FaPhone color="#ff0000" fontSize="10px" />
+                    <Heading
+                      fontSize="13px"
+                      fontWeight="normal"
+                      color="#ff0000"
+                      ml="2px"
+                    >
+                      Bán hàng trực tuyến
+                    </Heading>
+                  </Flex>
+                </MenuButton>
+                <MenuList>
+                  <Link to="#">
+                    <MenuItem>
+                      Chăm sóc khách hàng: 18006865 | Tư vấn mua hàng: 18006867
+                    </MenuItem>
+                  </Link>
+                </MenuList>
+              </Menu>
 
-              <Link to="contactus">
+              <Link to="news">
                 <Flex
                   w="max"
                   h="max"

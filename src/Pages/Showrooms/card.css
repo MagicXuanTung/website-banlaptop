@@ -21,18 +21,12 @@
     position: relative;
 }
 
-.card-banner {
+.card-banner1 {
     background: linear-gradient(to right, #4169e1, #00bfff);
     color: white;
     padding: 8px;
-    border-radius: 8px 8px 0 0;
     text-align: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 2;
-    /* Adjust z-index to make the banner appear above the content */
+    position: static;
 }
 
 .alignLeft {

@@ -15,6 +15,7 @@ import PrivateRoute from "./PrivateRoute/PrivateRoutes";
 import { AdminPage } from "../Pages/adminPage/adminPage";
 import { WarrantyCheck } from "../Pages/Warrantycheck/Warrantycheck";
 import { Showrooms } from "../Pages/Showrooms/Showroom";
+import { News } from "../Pages/Newspaper/News";
 
 const AllRoutes = () => {
   return (
@@ -220,6 +221,7 @@ const AllRoutes = () => {
         ></Route>
         <Route path="/warrantycheck" element={<WarrantyCheck />}></Route>
         <Route path="/showrooms" element={<Showrooms />}></Route>
+        <Route path="/news" element={<News />}></Route>
       </Routes>
     </div>
   );

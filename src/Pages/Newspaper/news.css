@@ -1,0 +1,75 @@
+.pageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+}
+
+.centerContainer {
+    width: 100%;
+    padding: 0 20px;
+    max-width: 1200px;
+}
+
+.card {
+    color: #333;
+    background-color: white;
+    padding: 16px;
+    border-radius: 8px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(34, 34, 34, 0.1);
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    /* To stack content vertically */
+
+    &:hover {
+        transform: translateY(-4px);
+    }
+}
+
+
+
+.card-banner {
+    background: linear-gradient(to right, #ff5722, #ff9800);
+    color: white;
+    padding: 8px;
+    border-radius: 8px 8px 8px 8px;
+    /* Rounded corners for the bottom */
+    text-align: center;
+    position: static;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.alignLeft {
+    text-align: left;
+}
+
+.cardGrid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.card-content {
+    margin-top: 20px;
+    /* Adjust margin to create space between image and content */
+    position: relative;
+}
+
+.card-content-inner {
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .cardGrid {
+        grid-template-columns: 1fr;
+    }
+}

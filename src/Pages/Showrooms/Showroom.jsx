@@ -97,7 +97,7 @@ export const Showrooms = () => {
         <div className="cardGrid">
           {cardTexts.map((text, i) => (
             <div className="card" key={i}>
-              <div className="card-banner">
+              <div className="card-banner1">
                 {i + 1}. DCB SHOP.VN {/* Add numerical order to banner */}
               </div>
               <div className="card-content">
