@@ -155,7 +155,7 @@ export const News = () => {
         <div className="cardGrid">
           {fakeNewsData.map((news) => (
             <div key={news.id} className="card">
-              <div className="card-banner">
+              <div className="card-banner1">
                 <Text className="alignLeft" color="white">
                   {news.title}
                 </Text>

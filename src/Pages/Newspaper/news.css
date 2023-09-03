@@ -34,18 +34,13 @@
 
 
 
-.card-banner {
+.card-banner1 {
     background: linear-gradient(to right, #ff5722, #ff9800);
     color: white;
     padding: 8px;
     border-radius: 8px 8px 8px 8px;
-    /* Rounded corners for the bottom */
     text-align: center;
     position: static;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 2;
 }
 
 .alignLeft {
